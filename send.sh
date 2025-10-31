@@ -2,8 +2,8 @@ wget --method POST \
   --header 'Authorization: Bearer re_123456789' \
   --header 'Content-Type: application/json' \
   --body-data $'{
-    "from": "onboarding@resend.dev",
-    "to": "delivered@resend.dev",
+    "from": "Acme <onboarding@resend.dev>",
+    "to": ["delivered@resend.dev"],
     "subject": "Hello World",
     "html": "<strong>it works!</strong>"
   }' \
